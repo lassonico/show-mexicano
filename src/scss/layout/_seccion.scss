@@ -1,0 +1,53 @@
+.ajustado{
+    padding: 5rem 2rem;
+    background-color: $grisOscuro;
+    .title-seccion{
+        font-size: 4rem;
+        margin: 0 0 3rem 0;
+        color: $blanco;
+    }
+    h2{
+        color: $rojo;
+        margin: 0;
+    }
+    .contenedor-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet{
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 4rem;
+        }
+    }
+    .card{
+        background-color: $oscuro;
+        margin: 1rem 0;
+        padding: 1rem 3rem 3rem 3rem;
+        border-radius: 1rem;
+        @include tablet{
+            width: 480px;
+        }
+        img{
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+            @include tablet{
+                width: 20%;
+            }
+        }
+    }
+    .precio{
+        color: $blanco;
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin: 0 0 2rem 0;
+    }
+    .list{
+        color: $blanco;
+        li{
+            font-size: 2rem;
+        }
+    }
+}

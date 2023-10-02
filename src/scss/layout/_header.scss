@@ -1,0 +1,108 @@
+// .no-webp .inicio{
+//     background-image: url('../img/header.jpg');
+//     @include tablet{
+//         background-image: url(../img/headerdesktop.jpg);
+//     }
+// }
+
+// .webp .inicio{
+//     background-image: url('../img/header.webp');
+//     @include tablet{
+//         background-image: url(../img/headerdesktop.webp);
+//     }
+// }
+
+.header{
+    background-color: $grisOscuro;
+    // padding-top: 1rem;
+    // padding: 1rem 0 3rem 0;
+
+    &.inicio{
+        background-position: center center;
+        background-size: cover;
+        min-height: 100%;
+        @include tablet {
+            min-height: 50rem;
+        }
+        .contenido-header{
+            @include tablet {
+                min-height: 50rem;
+            }
+        }
+    }
+}
+
+
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        color: $blanco;
+        font-weight: $bold;
+        font-size: 4rem;
+        line-height: 1.4;
+        max-width: 60rem;
+        margin: 4rem 1rem 2rem 1rem;
+        @include tablet {
+            text-align: left;
+        }
+    }
+    .contenedor-cta{
+        background-color: $oscuro;
+        padding-bottom: 5rem;
+        @include tablet{
+            background-color: transparent;
+        }
+    }
+    .cta{
+        display: block;
+        width: 90%;
+        padding: 1rem 2rem;
+        margin: 4rem auto 0 auto;
+        font-family: inherit;
+        font-size: 2.4rem;
+        font-weight: 500;
+        border-radius: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: $blanco;
+        background-image: linear-gradient(to top, $rojo 0%, $rojoOscuro 100%);
+        @include tablet{
+            margin: 4rem 0;
+            width: 50%;
+            padding: .5rem 2rem;
+        }
+    }
+    .contenedor-hero{
+        display: flex;
+        flex-direction: column;
+        @include tablet{
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .mariachi-movil{
+        display: block;
+        filter: drop-shadow(3px 3px 5px $oscuro);
+        width: 60%;
+        margin: 4rem auto 0 auto;
+        @include tablet{
+            display: none;
+        }
+    }
+    .mariachi{
+        display: none;
+        width: 50%;
+        margin: 2rem auto;
+        filter: drop-shadow(3px 3px 5px $oscuro);
+        @include tablet{
+            display: block;
+            width: 20%;
+        }
+    }
+}
+.title{
+    color: $blanco;
+}

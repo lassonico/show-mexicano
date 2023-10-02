@@ -1,0 +1,31 @@
+.contacto{
+    background-color: $grisOscuro;
+    padding: 5rem 0;
+    h2{
+        text-align: center;
+        font-size: 4rem;
+        margin: 0 0 3rem 0;
+        color: $blanco;
+    }
+    p{
+        text-align: center;
+        color: $blanco;
+    }
+}
+
+.contenedor-contacto{
+    background-color: $oscuro;
+    margin: 3rem 1rem;
+    padding: 1rem 3rem 3rem 3rem;
+    border-radius: 1rem;
+    a{
+        display: block;
+        width: 90%;
+        margin: 2rem auto;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        color: $blanco;
+        background-color: $rojo;
+        text-align: center;
+    }
+}
