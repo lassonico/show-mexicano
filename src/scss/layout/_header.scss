@@ -50,7 +50,7 @@
         }
     }
     .contenedor-cta{
-        background-color: $oscuro;
+        // background-color: $oscuro;
         padding-bottom: 5rem;
         @include tablet{
             background-color: transparent;
@@ -61,8 +61,8 @@
         width: 90%;
         padding: 1rem 2rem;
         margin: 4rem auto 0 auto;
+        font-size: 2rem;
         font-family: inherit;
-        font-size: 2.4rem;
         font-weight: 500;
         border-radius: 1rem;
         text-align: center;
@@ -86,7 +86,7 @@
     .mariachi-movil{
         display: block;
         filter: drop-shadow(3px 3px 5px $oscuro);
-        width: 60%;
+        width: 50%;
         margin: 4rem auto 0 auto;
         @include tablet{
             display: none;
