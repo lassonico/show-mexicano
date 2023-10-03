@@ -10,6 +10,10 @@ body {
     font-size: 1.6rem;
     line-height: 1.8;
     background-color: $oscuro;
+    user-select: none;
+    &.fijar-body{
+        overflow: hidden;
+    }
 }
 p {
     color: $negro;
@@ -69,4 +73,44 @@ h3 {
 }
 h4 {
     font-size: 2.6rem;
+}
+
+.btnup{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 1rem;
+    border-radius: 1.8rem;
+    background-color: $rojo;
+    border: none;
+    position: fixed;
+    right: -70px;
+    bottom: 3rem;
+    transition: all .4s ease-in-out;
+    img{
+        width: 3rem;
+        margin-left: -.5rem;
+    }
+}
+
+.btnup.activ{
+    right: -20px;
+}
+
+.bground{
+    background-color: $oscuro;
+}
+
+.whatsAppBtn{
+    width: 5.5rem;
+    position: fixed;
+    bottom: 3rem;
+    left: -7rem;
+    background-color: transparent;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+
+.whatsAppBtn.act{
+    left: 2rem;
 }

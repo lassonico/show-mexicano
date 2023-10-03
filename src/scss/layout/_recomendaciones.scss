@@ -1,0 +1,43 @@
+.recomendaciones{
+    padding: 5rem 1rem;
+    color: $blanco;
+    h2{
+        color: #faf5e6;
+        font-size: 4rem;
+        margin: 0 0 3rem;
+        text-align: center;
+    }
+}
+
+.card-contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.card-cometario{
+    position: relative;
+    flex: 1 0 auto;
+    margin: 2rem;
+    background-color: $grisOscuro;
+    border-radius: 1.5rem;
+    width: 230px;
+    height: auto;
+    text-align: center;
+    padding: 3rem 2rem;
+    p{
+        color: $blanco;
+    }
+    small{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 2rem;
+        color: $rojo;
+        margin: 0;
+        width: 100%;
+        font-size: 1.7rem;
+    }
+}
+.comillas{
+    width: 70px;
+}

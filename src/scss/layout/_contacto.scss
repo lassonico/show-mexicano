@@ -27,5 +27,8 @@
         color: $blanco;
         background-color: $rojo;
         text-align: center;
+        @include tablet{
+            width: 30%;
+        }
     }
 }
