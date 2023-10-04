@@ -1,10 +1,14 @@
+.seccion{
+    background-color: $blancoalt;
+}
+
 .ajustado{
     padding: 5rem 2rem;
-    background-color: $grisOscuro;
+    // background-color: $grisOscuro;
     .title-seccion{
         font-size: 4rem;
         margin: 0 0 3rem 0;
-        color: $blanco;
+        color: $rojoOscuroAlt;
     }
     h2{
         color: $rojo;
@@ -22,12 +26,16 @@
         }
     }
     .card{
-        background-color: $oscuro;
+        background-color: $golden;
         margin: 1rem 0;
         padding: 1rem 3rem 3rem 3rem;
         border-radius: 1rem;
         @include tablet{
             width: 480px;
+        }
+        .title-card{
+            color: $blancoalt;
+            font-weight: bold;
         }
         img{
             width: 40%;

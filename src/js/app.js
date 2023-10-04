@@ -52,11 +52,13 @@ function creargaleria(){
     const galeria = document.querySelector('.galeria-imagenes');
 
     for(let i = 1 ; i <= 12 ; i++){
-        const imagen = document.createElement('PICTURE');
+        const imagen = document.createElement('LI');
         imagen.innerHTML = `
-            <source srcset="build/img/tumb/${i}.avif" type="image/avif">
-            <source srcset="build/img/tumb/${i}.webp" type="image/webp">
-            <img loading="lazy" width="200" height="120" src="build/img/tumb/${i}.jpg" alt="Imgane galeria">
+            <picture>
+                <source srcset="build/img/tumb/${i}.avif" type="image/avif">
+                <source srcset="build/img/tumb/${i}.webp" type="image/webp">
+                <img loading="lazy" width="200" height="133" src="build/img/tumb/${i}.jpg" alt="Imgane galeria">
+            </picture>
         `;
 
         imagen.onclick = function(){

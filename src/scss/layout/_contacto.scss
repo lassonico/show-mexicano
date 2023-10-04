@@ -1,11 +1,8 @@
 .contacto{
-    background-color: $grisOscuro;
+    background-color: $rojoOscuroAlt;
     padding: 5rem 0;
     h2{
-        text-align: center;
-        font-size: 4rem;
-        margin: 0 0 3rem 0;
-        color: $blanco;
+        color: $blancoalt;
     }
     p{
         text-align: center;
@@ -14,7 +11,7 @@
 }
 
 .contenedor-contacto{
-    background-color: $oscuro;
+    background-color: $rojoalt;
     margin: 3rem 1rem;
     padding: 1rem 3rem 3rem 3rem;
     border-radius: 1rem;
@@ -25,10 +22,14 @@
         padding: 1rem 2rem;
         border-radius: 1rem;
         color: $blanco;
-        background-color: $rojo;
+        background-color: $golden;
         text-align: center;
         @include tablet{
             width: 30%;
         }
+    }
+    p{
+        color: $blancoalt;
+        text-align: left;
     }
 }

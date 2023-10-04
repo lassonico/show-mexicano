@@ -1,15 +1,14 @@
 .interna{
-    padding: 5rem 0;
+    // padding: 5rem 0;
     @include tablet{
         padding: 5rem;
     }
 }
 
 .contenedor-seccion{
-    color: $blanco;
+    color: $blancoalt;
+    padding-top: 5rem;
     h2{
-        color: #faf5e6;
-        font-size: 4rem;
         margin: 0 0 3rem;
         @include tablet {
             margin-bottom: 5rem;
@@ -19,12 +18,16 @@
         color: $blanco;
         padding: 2rem;
         @include tablet{
-            padding: 0 10rem;
+            padding: 0 2rem;
         }
     }
     img{
+        display: block;
+        margin-top: -2px;
         @include tablet{
             width: 30%;
+            object-fit: cover;
+            margin-top: 0;
         }
     }
     .contenedor-interior{
@@ -32,11 +35,17 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        background-color: $grisOscuro;
+        padding-bottom: 5rem;
+        background-color: $golden;
         @include tablet {
             flex-direction: row;
+            align-items: center;
             width: 80%;
             margin: 0 auto;
+            padding: 2rem;
+        }
+        @include desktop{
+            padding: 0;
         }
     }
 }

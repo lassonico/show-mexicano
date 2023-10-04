@@ -26,14 +26,14 @@
         font-weight: 200;
     }
     h3{
-        color: $blanco;
+        color: $blancoalt;
         font-weight: 900;
         font-size: 3rem;
         margin: 0;
     }
 }
 .navegacion {
-    background-color: $oscuro;
+    background-color: $rojoOscuroAlt;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +56,7 @@
         height: auto;
     }
     a{
-        color: $blanco;
+        color: $blancoalt;
         text-decoration: none;
         display: block;
         font-size: 2.2rem;
@@ -65,7 +65,7 @@
         width: 100%;
         padding: 2rem 0 2rem 2rem;
         &:hover{
-            color: $rojo;
+            color: $golden;
         }
         @include tablet {
             margin-right: 1.5rem;
