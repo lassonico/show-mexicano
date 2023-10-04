@@ -18,6 +18,8 @@ function iniciarApp(){
     barraNavBackground();
     msnWhatsApp();
     btnWhatsApp();
+    btnCtaHora();
+    btnCtaSerenata();
 }
 
 function btnham(){
@@ -117,6 +119,26 @@ function btnMeInteresa(){
     });
 }
 
+function btnCtaSerenata(){
+    const whatsapp = document.querySelector('.serenata');
+    const mensaje = "Hola, estoy interesado en la Serenata. ¿Me puedes dar más información?"
+    const telefono = "18328375537";
+    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+    whatsapp.addEventListener('click', () => {
+        window.open(url, "_blank");
+    })
+}
+
+function btnCtaHora(){
+    const whatsapp = document.querySelector('.hora');
+    const mensaje = "Hola, estoy interesado en la hora de show. ¿Me puedes dar más información?"
+    const telefono = "18328375537";
+    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+    whatsapp.addEventListener('click', () => {
+        window.open(url, "_blank");
+    })
+}
+
 function scrollUp(){
     const boton = document.querySelector('.btnup');
     const whatsapp = document.querySelector('.whatsAppBtn');
@@ -153,7 +175,7 @@ function barraNavBackground(){
 function msnWhatsApp(){
     const whatsapp = document.querySelector('.wpp');
     const mensaje = "Hola, estoy interesado en el Mariachi. ¿Me puedes dar más información?"
-    const telefono = "18327746762";
+    const telefono = "18328375537";
     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
     whatsapp.addEventListener('click', () => {
         window.open(url, "_blank");
@@ -163,7 +185,7 @@ function msnWhatsApp(){
 function btnWhatsApp(){
     const whatsapp = document.querySelector('.whatsAppBtn');
     const mensaje = "Hola, estoy interesado en el Mariachi. ¿Me puedes dar más información?"
-    const telefono = "18327746762";
+    const telefono = "18328375537";
     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
     whatsapp.addEventListener('click', () => {
         window.open(url, "_blank");
