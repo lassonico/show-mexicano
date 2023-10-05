@@ -60,7 +60,10 @@
         }
     }
     .cta-tarifa{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
         width: 90%;
         padding: .8rem 2rem;
         margin: 4rem auto 0 auto;
@@ -72,6 +75,11 @@
         color: $blancoalt;
         // background-image: linear-gradient(to top, $rojo 0%, $rojoOscuro 100%);
         background-color: $rojoOscuroAlt;
+        img{
+            width: 2.3rem;
+            display: block;
+            margin: 0;
+        }
         @include tablet{
             margin: 4rem 0;
             width: 50%;

@@ -8,7 +8,7 @@ const enlacesa = document.querySelectorAll('.navegacion a');
 const barras = document.querySelectorAll('.ham span');
 
 function iniciarApp(){
-    irArriba();
+    // irArriba();
     btnham();
     navegar();
     creargaleria();
@@ -16,7 +16,7 @@ function iniciarApp(){
     scrollUp();
     btnMeInteresa();
     barraNavBackground();
-    msnWhatsApp();
+    // msnWhatsApp();
     btnWhatsApp();
     btnCtaHora();
     btnCtaSerenata();
@@ -97,17 +97,6 @@ function mostrarImagen(imagen){
     body.classList.add('fijar-body');
 }
 
-function irArriba(){
-    const botonUp = document.querySelector('#btnUp');
-    botonUp.addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        const sec = e.target.attributes.href.value;
-        const seccion = document.querySelector(sec);
-        seccion.scrollIntoView({ behavior: "smooth" });
-    });
-}
-
 function btnMeInteresa(){
     const botonM = document.querySelector('.cta');
     botonM.addEventListener('click', function(e){
@@ -117,26 +106,6 @@ function btnMeInteresa(){
         const seccion = document.querySelector(sec);
         seccion.scrollIntoView({ behavior: "smooth" });
     });
-}
-
-function btnCtaSerenata(){
-    const whatsapp = document.querySelector('.serenata');
-    const mensaje = "Hola, estoy interesado en la Serenata. ¿Me puedes dar más información?"
-    const telefono = "18328375537";
-    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-    whatsapp.addEventListener('click', () => {
-        window.open(url, "_blank");
-    })
-}
-
-function btnCtaHora(){
-    const whatsapp = document.querySelector('.hora');
-    const mensaje = "Hola, estoy interesado en la hora de show. ¿Me puedes dar más información?"
-    const telefono = "18328375537";
-    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-    whatsapp.addEventListener('click', () => {
-        window.open(url, "_blank");
-    })
 }
 
 function scrollUp(){
@@ -172,16 +141,6 @@ function barraNavBackground(){
     })
 }
 
-function msnWhatsApp(){
-    const whatsapp = document.querySelector('.wpp');
-    const mensaje = "Hola, estoy interesado en el Mariachi. ¿Me puedes dar más información?"
-    const telefono = "18328375537";
-    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-    whatsapp.addEventListener('click', () => {
-        window.open(url, "_blank");
-    })
-}
-
 function btnWhatsApp(){
     const whatsapp = document.querySelector('.whatsAppBtn');
     const mensaje = "Hola, estoy interesado en el Mariachi. ¿Me puedes dar más información?"
@@ -191,3 +150,44 @@ function btnWhatsApp(){
         window.open(url, "_blank");
     })
 }
+
+// function msnWhatsApp(){
+//     const whatsapp = document.querySelector('.wpp');
+//     const mensaje = "Hola, estoy interesado en el Mariachi. ¿Me puedes dar más información?"
+//     const telefono = "18328375537";
+//     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+//     whatsapp.addEventListener('click', () => {
+//         window.open(url, "_blank");
+//     })
+// }
+
+// function btnCtaHora(){
+//     const whatsapp = document.querySelector('.hora');
+//     const mensaje = "Hola, estoy interesado en la hora de show. ¿Me puedes dar más información?"
+//     const telefono = "18328375537";
+//     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+//     whatsapp.addEventListener('click', () => {
+//         window.open(url, "_blank");
+//     })
+// }
+
+// function btnCtaSerenata(){
+//     const whatsapp = document.querySelector('.serenata');
+//     const mensaje = "Hola, estoy interesado en la Serenata. ¿Me puedes dar más información?"
+//     const telefono = "18328375537";
+//     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+//     whatsapp.addEventListener('click', () => {
+//         window.open(url, "_blank");
+//     })
+// }
+
+// function irArriba(){
+//         const botonUp = document.querySelector('#btnUp');
+//         botonUp.addEventListener('click', function(e){
+//             e.preventDefault();
+//             e.stopPropagation();
+//             const sec = e.target.attributes.href.value;
+//             const seccion = document.querySelector(sec);
+//             seccion.scrollIntoView({ behavior: "smooth" });
+//         });
+//     }
