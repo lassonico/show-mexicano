@@ -1,5 +1,5 @@
 .footer{
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     background-color: $golden;
 
     .contenido-footer{
@@ -10,6 +10,17 @@
         color: $blancoalt;
         text-align: center;
         margin: 0;
+    }
+    .dev{   
+        text-align: center;
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 200;
+        color: $blancoalt;
+        a{
+            font-weight: bold;
+            color: $rojoalt;
+        }
     }
 
 }
