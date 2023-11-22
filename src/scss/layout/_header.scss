@@ -1,8 +1,11 @@
 
 .header{
-    // background-color: $grisOscuro;
-    background: $rojoalt;
-    background: linear-gradient(90deg, $rojoalt 50%, $rojoOscuroAlt 95%);
+    background-image: url('/build/img/heroimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    // background: $rojoalt;
+    // background: linear-gradient(90deg, $rojoalt 50%, $rojoOscuroAlt 95%);
 
     &.inicio{
         background-position: center center;

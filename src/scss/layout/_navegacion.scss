@@ -6,6 +6,7 @@
     left: 0;
     width: 100%;
     padding: 1rem 2rem;
+    transition: all .3s ease-in-out;
     z-index: 1;
     @include tablet{
         flex-direction: row;

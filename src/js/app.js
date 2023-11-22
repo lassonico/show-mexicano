@@ -111,15 +111,15 @@ function btnMeInteresa(){
 function scrollUp(){
     const boton = document.querySelector('.btnup');
     const whatsapp = document.querySelector('.whatsAppBtn');
-    const elementoRef = document.querySelector('.referencia');
+    const elementoRef = document.querySelector('.inicio');
 
     window.addEventListener('scroll', function(){
         const punto = elementoRef.getBoundingClientRect().top
-        if(punto < 0){
+        if(punto < -30){
             boton.classList.add('activ');
             whatsapp.classList.add('act');
         }
-        if(punto > 0){
+        if(punto > -30){
             boton.classList.remove('activ');
             whatsapp.classList.remove('act');
         }
