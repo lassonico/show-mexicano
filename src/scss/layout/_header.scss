@@ -24,8 +24,10 @@
 
 .imagen-especial{
     all: unset;
-    margin-top: 7rem;
+    margin-top: 7.4rem;
     display: block;
+    width: 100%;
+    height: auto;
     @include tablet {
         display: none;
     }
