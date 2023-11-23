@@ -27,10 +27,14 @@
         font-weight: 200;
     }
     h3{
-        color: $blancoalt;
+        color: $rojoalt;
         font-weight: 900;
         font-size: 3rem;
         margin: 0;
+        transition: all .3s ease-in-out;
+    }
+    h3.blanco{
+        color: $blancoalt;
     }
 }
 .navegacion {
@@ -100,12 +104,15 @@
     span{
         outline: none;
         display: block;
-        background-color: $blanco;
+        background-color: $rojoalt;
         height: 3px;
         width: 28px;
         margin: 5px auto;
         border-radius: 2px;
         transition: all .3s ease-in-out;
+    }
+    span.activado{
+        background-color: $blancoalt;
     }
     .barra1.animado{
         transform: rotate(-45deg) translate(-7px, 4px);

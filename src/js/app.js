@@ -8,18 +8,13 @@ const enlacesa = document.querySelectorAll('.navegacion a');
 const barras = document.querySelectorAll('.ham span');
 
 function iniciarApp(){
-    // irArriba();
     btnham();
     navegar();
     creargaleria();
     scrollNav();
     scrollUp();
     btnMeInteresa();
-    barraNavBackground();
-    // msnWhatsApp();
     btnWhatsApp();
-    btnCtaHora();
-    btnCtaSerenata();
 }
 
 function btnham(){
@@ -109,8 +104,11 @@ function btnMeInteresa(){
 }
 
 function scrollUp(){
+    const barra = document.querySelector('.barra');
     const boton = document.querySelector('.btnup');
     const whatsapp = document.querySelector('.whatsAppBtn');
+    const titleLogo = document.querySelector('.contenedor-logo h3');
+    const logo = document.querySelectorAll('.ham span');
     const elementoRef = document.querySelector('.inicio');
 
     window.addEventListener('scroll', function(){
@@ -118,25 +116,18 @@ function scrollUp(){
         if(punto < -30){
             boton.classList.add('activ');
             whatsapp.classList.add('act');
+            barra.classList.add('bground');
+            titleLogo.classList.add('blanco');
+            // logo.classList.add('activado');
+            logo.forEach(barra => {barra.classList.add('activado')});
         }
         if(punto > -30){
             boton.classList.remove('activ');
             whatsapp.classList.remove('act');
-        }
-    })
-}
-
-function barraNavBackground(){
-    const barra = document.querySelector('.barra');
-    const elementoRef = document.querySelector('.inicio');
-
-    window.addEventListener('scroll', function(){
-        const punto = elementoRef.getBoundingClientRect().top;
-        if(punto < -30){
-            barra.classList.add('bground');
-        }
-        if(punto > -30){
             barra.classList.remove('bground');
+            titleLogo.classList.remove('blanco');
+            // logo.classList.remove('activado');
+            logo.forEach(barra => {barra.classList.remove('activado')});
         }
     })
 }
@@ -150,44 +141,3 @@ function btnWhatsApp(){
         window.open(url, "_blank");
     })
 }
-
-// function msnWhatsApp(){
-//     const whatsapp = document.querySelector('.wpp');
-//     const mensaje = "Hola, estoy interesado en el Mariachi. ¿Me puedes dar más información?"
-//     const telefono = "18328375537";
-//     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-//     whatsapp.addEventListener('click', () => {
-//         window.open(url, "_blank");
-//     })
-// }
-
-// function btnCtaHora(){
-//     const whatsapp = document.querySelector('.hora');
-//     const mensaje = "Hola, estoy interesado en la hora de show. ¿Me puedes dar más información?"
-//     const telefono = "18328375537";
-//     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-//     whatsapp.addEventListener('click', () => {
-//         window.open(url, "_blank");
-//     })
-// }
-
-// function btnCtaSerenata(){
-//     const whatsapp = document.querySelector('.serenata');
-//     const mensaje = "Hola, estoy interesado en la Serenata. ¿Me puedes dar más información?"
-//     const telefono = "18328375537";
-//     const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-//     whatsapp.addEventListener('click', () => {
-//         window.open(url, "_blank");
-//     })
-// }
-
-// function irArriba(){
-//         const botonUp = document.querySelector('#btnUp');
-//         botonUp.addEventListener('click', function(e){
-//             e.preventDefault();
-//             e.stopPropagation();
-//             const sec = e.target.attributes.href.value;
-//             const seccion = document.querySelector(sec);
-//             seccion.scrollIntoView({ behavior: "smooth" });
-//         });
-//     }

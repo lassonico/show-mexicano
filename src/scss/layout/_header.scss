@@ -1,12 +1,12 @@
 
 .header{
-    background-image: url('/build/img/heroimg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    // background-image: url('/build/img/heroimg.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
     // background: $rojoalt;
     // background: linear-gradient(90deg, $rojoalt 50%, $rojoOscuroAlt 95%);
-
+    
     &.inicio{
         background-position: center center;
         background-size: cover;
@@ -22,17 +22,26 @@
     }
 }
 
+.imagen-especial{
+    all: unset;
+    margin-top: 7rem;
+    display: block;
+    @include tablet {
+        display: none;
+    }
+}
+
 .contenido-header{
     display: flex;
     flex-direction: column;
     h1{
         text-align: center;
-        color: $blancoalt;
+        color: $rojoOscuroAlt;
         font-weight: $bold;
         font-size: 4rem;
         line-height: 1.4;
         max-width: 60rem;
-        margin: 8rem 1rem 2rem 1rem;
+        margin: 4rem 1rem 2rem 1rem;
         @include tablet {
             text-align: left;
         }
