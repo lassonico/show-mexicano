@@ -12,13 +12,25 @@
         background-size: cover;
         min-height: 70vh;
         @include tablet {
-            min-height: 50rem;
+            min-height: 70rem;
         }
         .contenido-header{
             @include tablet {
-                min-height: 50rem;
+                height: 100vh;
             }
         }
+    }
+}
+
+.contenedor-hero{
+    display: flex;
+    flex-direction: column;
+    @include tablet{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 8rem;
+        gap: 2rem;
     }
 }
 
@@ -29,13 +41,17 @@
     width: 100%;
     height: auto;
     @include tablet {
-        display: none;
+        width: 50%;
+        margin: 0 auto  ;
     }
 }
 
 .contenido-header{
     display: flex;
     flex-direction: column;
+    @include tablet {
+        justify-content: flex-start;
+    }
     h1{
         text-align: center;
         color: $rojoOscuroAlt;
@@ -53,6 +69,7 @@
         padding-bottom: 5rem;
         @include tablet{
             background-color: transparent;
+            padding-bottom: 0;
         }
     }
     .cta{
@@ -74,14 +91,7 @@
             padding: .5rem 2rem;
         }
     }
-    .contenedor-hero{
-        display: flex;
-        flex-direction: column;
-        @include tablet{
-            flex-direction: row;
-            align-items: center;
-        }
-    }
+    
     .mariachi-movil{
         display: block;
         width: 70%;

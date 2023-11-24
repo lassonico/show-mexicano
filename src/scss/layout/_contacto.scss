@@ -17,6 +17,13 @@
     margin: 3rem 1rem;
     padding: 1rem 3rem 3rem 3rem;
     border-radius: 1rem;
+    @include tablet{
+        width: 70%;
+        margin: 5rem auto;
+    }
+    @include desktop{
+        width: 50%;
+    }
     a{
         display: block;
         width: 90%;

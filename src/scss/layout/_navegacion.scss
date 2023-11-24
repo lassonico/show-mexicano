@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 2rem;
+    // padding: 1rem 2rem;
     transition: all .3s ease-in-out;
     z-index: 1;
     @include tablet{
@@ -27,14 +27,29 @@
         font-weight: 200;
     }
     h3{
+        display: block;
+        width: 100%;
         color: $rojoalt;
         font-weight: 900;
         font-size: 3rem;
-        margin: 0;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: white;
         transition: all .3s ease-in-out;
+        @include tablet{
+            background-color: transparent;
+        }
     }
+    
     h3.blanco{
         color: $blancoalt;
+        width: 100%;
+        background-color: $rojoOscuroAlt;
+        text-align: center;
+        @include tablet{
+            background-color: transparent;
+        }
     }
 }
 .navegacion {
@@ -43,22 +58,24 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 0;
-    left: -100%;
+    top: -57rem;
+    left: 0;
+    opacity: 0;
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 10rem 0 5rem 0;
+    padding: 8rem 0 2rem 0;
     transition: all .3s ease-in-out;
     z-index: 1;
     @include tablet {
         display: flex;
         flex-direction: row;
-        position: initial;
+        position: inherit;
         background-color: transparent;
         padding: 0;
         width: auto;
         height: auto;
+        opacity: 1;
     }
     a{
         color: $blancoalt;
@@ -66,14 +83,20 @@
         display: block;
         font-size: 2.2rem;
         text-align: left;
-        transition: all .3s;
+        transition: all .4s;
         width: 100%;
         padding: 2rem 0 2rem 2rem;
         &:hover{
             color: $golden;
         }
-        @include tablet {
+        @include tablet{
             margin-right: 1.5rem;
+            color: $rojoOscuroAlt;
+            z-index: 50;
+            &:hover{
+                color: $golden;
+            }
+
             &:last-of-type{
                 margin-right: 0;
             }
@@ -82,7 +105,8 @@
 }
 
 .navegacion.active {
-    left: 0;
+    top: 0;
+    opacity: 1;
 }
 
 .ham{

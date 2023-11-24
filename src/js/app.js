@@ -57,7 +57,6 @@ function creargaleria(){
                 <img loading="lazy" width="200" height="133" src="build/img/tumb/${i}.jpg" alt="Imgane galeria">
             </picture>
         `;
-
         imagen.onclick = function(){
             mostrarImagen(i);
         }
@@ -70,7 +69,7 @@ function mostrarImagen(imagen){
     imagenmodal.innerHTML = `
         <source srcset="build/img/grandes/${imagen}.avif" type="image/avif">
         <source srcset="build/img/grandes/${imagen}.webp" type="image/webp">
-        <img loading="lazy" width="550" height="300" src="build/img/grandes/${imagen}.jpg" alt="Imgane galeria">
+        <img loading="lazy" width="550" height="300" src="build/img/grandes/${imagen}.jpg" class="img-big" alt="Imgane galeria">
     `;
 
     const overlay = document.createElement('DIV');

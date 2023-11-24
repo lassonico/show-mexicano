@@ -1,5 +1,5 @@
 .recomendaciones{
-    padding: 5rem 1rem;
+    padding: 5rem 0 5rem 1rem;
     color: $blanco;
     h2{
         margin: 0 3rem 3rem 3rem;
@@ -9,7 +9,7 @@
 .card-contenedor{
     display: flex;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
     @include tablet{
         flex-wrap: wrap;
         justify-content: center;

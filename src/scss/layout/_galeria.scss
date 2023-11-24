@@ -25,13 +25,21 @@
     @include desktop{
         @include grid(6, 2rem);
     }
+    
     img{
-        border-radius: 10px;
+        border-radius: 5px;
+        object-fit: cover;
         cursor: pointer;
         transition: all .3s ease-in-out;
         &:hover{
             filter: brightness(50%);
         }
+    }
+}
+
+picture{
+    img{
+        object-fit: cover;
     }
 }
 
