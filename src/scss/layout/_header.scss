@@ -69,7 +69,7 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        color: $grisOscuro;
+        color: $rojoOscuroAlt;
         border: 1px solid $grisOscuro;
         padding: .8rem 2rem;
         margin: 0 auto;
@@ -77,9 +77,15 @@
         font-weight: 500;
         font-size: 2rem;
         width: 90%;
+        @include tablet{
+            margin: 4rem 0;
+            width: 50%;
+            padding: .5rem 2rem;
+        }
         img{
             width: 2.3rem;
         }
+
     }
     .contenedor-cta{
         // background-color: $oscuro;
