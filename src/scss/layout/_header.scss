@@ -52,16 +52,33 @@
     @include tablet {
         justify-content: flex-start;
     }
-    h1{
+    h2{
         text-align: center;
         color: $rojoOscuroAlt;
         font-weight: $bold;
         font-size: 4rem;
         line-height: 1.4;
         max-width: 60rem;
-        margin: 4rem 1rem 2rem 1rem;
+        margin: 4rem 1rem 1rem 1rem;
         @include tablet {
             text-align: left;
+        }
+    }
+    .telnum{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: $grisOscuro;
+        border: 1px solid $grisOscuro;
+        padding: .8rem 2rem;
+        margin: 0 auto;
+        border-radius: 1rem;
+        font-weight: 500;
+        font-size: 2rem;
+        width: 90%;
+        img{
+            width: 2.3rem;
         }
     }
     .contenedor-cta{
@@ -76,7 +93,7 @@
         display: block;
         width: 90%;
         padding: .8rem 2rem;
-        margin: 4rem auto 0 auto;
+        margin: 2rem auto 0 auto;
         font-size: 2rem;
         font-family: inherit;
         border-radius: 1rem;
