@@ -33,6 +33,7 @@
         width: 100%;
         @include tablet{
             width: 480px;
+            padding: 2rem;
         }
         .title-card{
             color: $blancoalt;
@@ -81,8 +82,8 @@
             margin: 0;
         }
         @include tablet{
-            margin: 4rem 0;
-            width: 50%;
+            margin: 4rem auto 0 auto;
+            width: 70%;
             padding: .5rem 2rem;
         }
     }

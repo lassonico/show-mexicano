@@ -25,6 +25,7 @@
     }
     span{
         font-weight: 200;
+        margin: 0;
     }
     h3{
         display: block;
@@ -32,13 +33,18 @@
         color: $rojoalt;
         font-weight: 900;
         font-size: 3rem;
-        text-align: center;
-        margin: 0 auto;
+        text-align: left;
+        margin: 0;
         padding: 1rem;
         background-color: white;
         transition: all .3s ease-in-out;
         @include tablet{
-            background-color: transparent;
+            font-size: 2rem;
+            margin: 0;
+        }
+        @include desktop{
+            font-size: 4rem;
+            margin: 0;
         }
     }
     
@@ -46,7 +52,6 @@
         color: $blancoalt;
         width: 100%;
         background-color: $rojoOscuroAlt;
-        text-align: center;
         @include tablet{
             background-color: transparent;
         }
@@ -90,6 +95,7 @@
             color: $golden;
         }
         @include tablet{
+            font-size: 1.7rem;
             margin-right: 1.5rem;
             color: $rojoOscuroAlt;
             z-index: 50;
@@ -100,6 +106,9 @@
             &:last-of-type{
                 margin-right: 0;
             }
+        }
+        @include desktop{
+            font-size: 2.2rem;
         }
     }
 }
